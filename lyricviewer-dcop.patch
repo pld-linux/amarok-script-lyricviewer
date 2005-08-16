@@ -1,0 +1,11 @@
+--- ./lyricviewer.sh~	2005-08-16 23:46:30.000000000 +0300
++++ ./lyricviewer.sh	2005-08-16 23:51:26.889106664 +0300
+@@ -27,7 +27,7 @@
+ 	do
+ 		#kfmexec "dcop amarok player lyricsByPath" $song | sed -e s'~<br
+ 		#\/>~~g' -e s'~<\/body>~~' -e s'~<\/html>~~' | tee .lyrics_final
+-		kfmexec "dcop amarok player lyricsByPath" $song | html2text	-nobs | tee .lyrics_final
++		dcop amarok player lyricsByPath $song | html2text	-nobs | tee .lyrics_final
+ 		if [ -n "$(cat .lyrics_final)" ] ; then	
+ 			kdialog --icon amarok --title "View Lyrics"  --textbox .lyrics_final 225 500
+ 		else 
