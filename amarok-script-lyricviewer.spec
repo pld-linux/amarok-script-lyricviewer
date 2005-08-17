@@ -1,5 +1,6 @@
 %define		scriptname	lyricviewer
 Summary:	Extended Lyric Support
+Summary(pl):	Rozszerzona obs³uga tekstów piosenek
 Name:		amarok-script-lyricviewer
 Version:	0.2
 Release:	0.2
@@ -21,12 +22,22 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_scriptdir %{_datadir}/apps/amarok/scripts
 
 %description
-lyricviewer adds extended Lyric support into amarok. After fetching lyrics from
-the internet, you can view lyrics of any file that you have previously gotten
-lyrics for.
+lyricviewer adds extended Lyric support into amarok. After fetching
+lyrics from the Internet, you can view lyrics of any file that you
+have previously gotten lyrics for.
 
-This is an extension to the default of showing only the lyrics for currently
-playing song. This support viewing lyrics for multiple songs at once.
+This is an extension to the default of showing only the lyrics for
+currently playing song. This support viewing lyrics for multiple songs
+at once.
+
+%description -l pl
+lyricviewer dodaje rozszerzon± obs³ugê tekstów piosenek do amaroka.
+Po pobraniu tekstów z Internetu mo¿na ogl±daæ teksty dowolnego utworu,
+którego tekst zosta³ uprzednio ¶ci±gniêty.
+
+Jest to rozszerzenie dla domy¶lnego pokazywania tylko tekstu aktualnie
+odtwarzanego utworu. Ten skrypt obs³uguje ogl±danie tekstów wielu
+piosenek jednocze¶nie.
 
 %prep
 %setup -q -n %{scriptname}
