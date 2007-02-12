@@ -1,6 +1,6 @@
 %define		scriptname	lyricviewer
 Summary:	Extended Lyric Support
-Summary(pl.UTF-8):   Rozszerzona obsługa tekstów piosenek
+Summary(pl.UTF-8):	Rozszerzona obsługa tekstów piosenek
 Name:		amarok-script-lyricviewer
 Version:	0.2
 Release:	0.2
